@@ -1,0 +1,6 @@
+{
+  "name": "FX Guide - Casio fx-991ES",
+  "description": "Le guide compagnon mobile complet et interactif pour maîtriser la calculatrice Casio fx-991ES en Première S2.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

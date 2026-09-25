@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-forest: #123C2A;
+  --color-forest-dark: #0A2218;
+  --color-forest-hover: #194F38;
+  --color-forest-mint: #6FAF82;
+  --color-lime-accent: #B8E86A;
+  --color-lime-hover: #A5D952;
+  --color-lime-subtle: #EDF9D9;
+
+  /* Light mode tokens specified by user */
+  --color-app-bg: #F7F8F4;
+  --color-app-surface: #FFFFFF;
+  --color-app-sub: #F0F3EE;
+  --color-app-border: #DCE2DC;
+  --color-app-text: #15251E;
+  --color-app-muted: #53635B;
+  --color-app-disabled: #89968F;
+
+  /* Dark mode tokens specified by user (NO pure black) */
+  --color-dark-bg: #14231D;
+  --color-dark-surface: #1D3028;
+  --color-dark-sub: #243A31;
+  --color-dark-border: #34483F;
+  --color-dark-text: #F0F4EF;
+  --color-dark-muted: #B7C5BE;
+  --color-dark-disabled: #718079;
+  --color-dark-primary: #6FAF82;
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-lcd: 'Chakra Petch', 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Casio Authentic Natural-V.P.A.M. LCD screen */
+.lcd-screen {
+  background-color: #9EA894;
+  color: #121E14;
+  font-family: 'Chakra Petch', 'JetBrains Mono', monospace;
+  box-shadow: inset 0 2px 6px rgba(0, 0, 0, 0.38), inset 0 -1px 2px rgba(255, 255, 255, 0.45);
+  text-shadow: 1px 1px 0 rgba(158, 168, 148, 0.5);
+}
+
+.lcd-screen-dark {
+  background-color: #8E9A84;
+  color: #0E1810;
+}
+
+/* Smooth mobile scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
